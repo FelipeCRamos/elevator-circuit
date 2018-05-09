@@ -10,8 +10,8 @@ ARCHITECTURE structural OF comparator IS
 --Declaracao da componente comp_unit
 COMPONENT comp_unit IS
 PORT (a, b: IN BIT;
-  in_amqb, in_aib, in_alqb: IN BIT;
-  out_amqb, out_aib, out_alqb: OUT BIT);
+	in_amqb, in_aib, in_alqb: IN BIT;
+	out_amqb, out_aib, out_alqb: OUT BIT);
 END COMPONENT;
 
 --Declaracao dos sinais internos auxiliares
@@ -21,9 +21,8 @@ SIGNAL i1, i2, i3 : BIT;
 
 BEGIN
 --Instaciacao das componentes e mapeamento de portas
-cu3: comp_unit PORT MAP(a3,b3,'0','1','0',mq3,i3,lq3);
-cu2: comp_unit PORT MAP(a2,b2,mq3,i3,lq3,mq2,i2,lq2);
-cu1: comp_unit PORT MAP(a1,b1,mq2,i2,lq2,mq1,i1,lq1);
-cu0: comp_unit PORT MAP(a0,b0,mq1,i1,lq1,a_mq_b, a_i_b, a_lq_b);
-
+	cu3: comp_unit PORT MAP(a3,b3,'0','1','0',mq3,i3,lq3);
+	cu2: comp_unit PORT MAP(a2,b2,mq3,i3,lq3,mq2,i2,lq2);
+	cu1: comp_unit PORT MAP(a1,b1,mq2,i2,lq2,mq1,i1,lq1);
+	cu0: comp_unit PORT MAP(a0,b0,mq1,i1,lq1,a_mq_b, a_i_b, a_lq_b);
 END structural;
