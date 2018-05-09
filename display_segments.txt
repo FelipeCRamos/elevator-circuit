@@ -1,0 +1,51 @@
+S0
+zero OR um OR dois OR tres OR quatro OR seis OR sete OR oito OR nove OR dez OR onze OR doze OR treze OR catorze
+S1
+zero OR tres OR cinco OR seis OR oito OR nove OR dez OR treze OR quinze
+S2
+zero OR um OR dois OR tres OR quatro OR cinco OR seis OR sete OR oito OR nove OR dez OR onze OR doze OR treze OR catorze OR quinze
+S3
+zero OR dois OR seis OR oito OR dez OR doze
+S4
+zero OR quatro OR cinco OR oito OR nove OR dez OR catorze OR quinze
+S5
+zero OR dois OR tres OR cinco OR seis OR sete OR oito OR nove OR dez OR doze OR treze OR quinze
+S6
+OR dois OR tres OR quatro OR cinco OR seis OR oito OR nove OR doze OR treze OR catorze OR quinze
+S7
+dez OR onze OR doze OR treze OR catorze OR quinze
+
+MODELO:
+0 - (NOT z AND NOT u AND NOT d AND NOT t)
+1 - (NOT z AND NOT u AND NOT d AND t)
+2 - (NOT z AND NOT u AND d AND NOT t)
+3 - (NOT z AND NOT u AND d AND t)
+4 - (NOT z AND u AND NOT d AND NOT t)
+5 - (NOT z AND u AND NOT d AND t)
+6 - (NOT z AND u AND d AND NOT t)
+7 - (NOT z AND u AND d AND t)
+8 - (z AND NOT u AND NOT d AND NOT t)
+9 - (z AND NOT u AND NOT d AND t)
+10 - (z AND NOT u AND d AND NOT t)
+11 - (z AND NOT u AND d AND t)
+12 - (z AND u AND NOT d AND NOT t)
+13 - (z AND u AND NOT d AND t)
+14 - (z AND u AND d AND NOT t)
+15 - (z AND u AND d AND t)
+
+S0
+(NOT z AND NOT u AND NOT d AND NOT t) OR (NOT z AND NOT u AND NOT d AND t) OR (NOT z AND NOT u AND d AND NOT t) OR (NOT z AND NOT u AND d AND t) OR (NOT z AND u AND NOT d AND NOT t) OR (NOT z AND u AND d AND NOT t) OR (NOT z AND u AND d AND t) OR (z AND NOT u AND NOT d AND NOT t) OR (z AND NOT u AND NOT d AND t) OR (z AND NOT u AND d AND NOT t) OR (z AND NOT u AND d AND t) OR (z AND u AND NOT d AND NOT t) OR (z AND u AND NOT d AND t) OR (z AND u AND d AND NOT t)
+S1
+(NOT z AND NOT u AND NOT d AND NOT t) OR (NOT z AND NOT u AND d AND t) OR (NOT z AND u AND NOT d AND t) OR (NOT z AND u AND d AND NOT t) OR (z AND NOT u AND NOT d AND NOT t) OR (z AND NOT u AND NOT d AND t) OR (z AND NOT u AND d AND NOT t) OR (z AND u AND NOT d AND t) OR (z AND u AND d AND t)
+S2
+(NOT z AND NOT u AND NOT d AND NOT t) OR (NOT z AND NOT u AND NOT d AND t) OR (NOT z AND NOT u AND d AND NOT t) OR (NOT z AND NOT u AND d AND t) OR (NOT z AND u AND NOT d AND NOT t) OR (NOT z AND u AND NOT d AND t) OR (NOT z AND u AND d AND NOT t) OR (NOT z AND u AND d AND t) OR (z AND NOT u AND NOT d AND NOT t) OR (z AND NOT u AND NOT d AND t) OR (z AND NOT u AND d AND NOT t) OR (z AND NOT u AND d AND t) OR (z AND u AND NOT d AND NOT t) OR (z AND u AND NOT d AND t) OR (z AND u AND d AND NOT t) OR (z AND u AND d AND t)
+S3
+(NOT z AND NOT u AND NOT d AND NOT t) OR (NOT z AND NOT u AND d AND NOT t) OR (NOT z AND u AND d AND NOT t) OR (z AND NOT u AND NOT d AND NOT t) OR (z AND NOT u AND d AND NOT t) OR (z AND u AND NOT d AND NOT t)
+S4
+(NOT z AND NOT u AND NOT d AND NOT t) OR (NOT z AND u AND NOT d AND NOT t) OR (NOT z AND u AND NOT d AND t) OR (z AND NOT u AND NOT d AND NOT t) OR (z AND NOT u AND NOT d AND t) OR (z AND NOT u AND d AND NOT t) OR (z AND u AND d AND NOT t) OR (z AND u AND d AND t)
+S5
+(NOT z AND NOT u AND NOT d AND NOT t) OR (NOT z AND NOT u AND d AND NOT t) OR (NOT z AND NOT u AND d AND t) OR (NOT z AND u AND NOT d AND t) OR (NOT z AND u AND d AND NOT t) OR (NOT z AND u AND d AND t) OR (z AND NOT u AND NOT d AND NOT t) OR (z AND NOT u AND NOT d AND t) OR (z AND NOT u AND d AND NOT t) OR (z AND u AND NOT d AND NOT t) OR (z AND u AND NOT d AND t) OR (z AND u AND d AND t)
+S6
+AND (NOT z AND NOT u AND d AND NOT t) OR (NOT z AND NOT u AND d AND t) OR (NOT z AND u AND NOT d AND NOT t) OR (NOT z AND u AND NOT d AND t) OR (NOT z AND u AND d AND NOT t) OR (z AND NOT u AND NOT d AND NOT t) OR (z AND NOT u AND NOT d AND t) OR (z AND u AND NOT d AND NOT t) OR (z AND u AND NOT d AND t) OR (z AND u AND d AND NOT t) OR (z AND u AND d AND t)
+S7
+(z AND NOT u AND d AND NOT t) OR (z AND NOT u AND d AND t) OR (z AND u AND NOT d AND NOT t) OR (z AND u AND NOT d AND t) OR (z AND u AND d AND NOT t) OR (z AND u AND d AND t)
