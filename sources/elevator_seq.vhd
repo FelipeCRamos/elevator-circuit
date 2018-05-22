@@ -56,7 +56,7 @@ BEGIN
 	ct: counter_3bits PORT MAP("0000", clk, clrn, enable, '0', forward, curr_floor);
 	di: display PORT MAP(curr_floor, disp);
 
-	close_door <= '0' WHEN curr_floor = input_cod ELSE '1';
-	motor_on <= '0' WHEN curr_floor = input_cod ELSE '1';
+	close_door <= enable;
+	motor_on <= enable;
 
 END structural;
